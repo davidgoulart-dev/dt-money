@@ -25,10 +25,10 @@ body {
 }
 html {
     @media (max-width: 1080px) { 
-        font-size: 93.75%;
+        font-size: 93.75%
     }
     @media (max-width: 720px) { 
-        87.5%;
+        font-size: 87.5%
     }
 }
 body, input, textarea, button {
