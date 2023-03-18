@@ -35,21 +35,42 @@ export function Summary() {
                 <header>
                     <p>Entradas</p>
                     <img src={incomeImg} alt="Entradas" />
-                    <strong> {summary.deposits}</strong>
+                    <strong> 
+                    { new Intl.NumberFormat('pt-BR', {
+                            style: 'currency',
+                            currency: 'BRL'
+
+                        }).format(summary.deposits)}
+                        
+                    </strong>
                 </header>
             </div>
             <div>
                 <header>
                     <p>Saidas</p>
                     <img src={outcomeImg} alt="Saídas" />
-                    <strong>{summary.withdraws}</strong>
+                    <strong>
+                    { new Intl.NumberFormat('pt-BR', {
+                            style: 'currency',
+                            currency: 'BRL'
+
+                        }).format(summary.withdraws)}
+                        
+                        </strong>
                 </header>
             </div>
             <div className="hightlight-background">
                 <header>
                     <p>Total</p>
                     <img src={totalImg} alt="Total" />
-                    <strong>{summary.total}</strong>
+                    <strong>
+                    { new Intl.NumberFormat('pt-BR', {
+                            style: 'currency',
+                            currency: 'BRL'
+
+                        }).format(summary.total)}
+                        
+                    </strong>
                 </header>
             </div>
             
